@@ -1,9 +1,9 @@
 # ![WebApp](https://iharsh234.github.io/WebApp/images/demo/demo_landing.JPG)
-# WebApp
+# Blazor Dashboard
 <table>
 <tr>
 <td>
-  Dashboard ui clone, utilizando Blazor wasm e bootstrap. WebApp com objetivo de praticar habilidades de front-end como construção de aplicações modernas, responsividade e design.
+  Um clone de interface gráfica de um dashboard, utilizando Blazor wasm e bootstrap. WebApp com objetivo de praticar habilidades de front-end como construção de aplicações modernas, responsividade e design.
 </td>
 </tr>
 </table>
@@ -19,10 +19,10 @@ Crédito ao site dribble e autoria da **Profitize - SaaS Analytics Tool**, confi
 
 ![https://dribbble.com/shots/18542067-Profitize-SaaS-Analytics-Tool](https://cdn.dribbble.com/userupload/2948121/file/original-f049e24e7fdfc620c3211a559e52fab5.png?compress=1&resize=1600x1200)
 
-### Query Filled Form
+### Barra de Menu
 ![](https://iharsh234.github.io/WebApp/images/demo/demo_query.JPG)
 
-### Charts
+### Gráficos
 ![](https://iharsh234.github.io/WebApp/images/demo/demo_chart1.JPG)
 ![](https://iharsh234.github.io/WebApp/images/demo/demo_chart2.JPG)
 ![](https://iharsh234.github.io/WebApp/images/demo/demo_chart3.JPG)
@@ -33,42 +33,36 @@ The WebApp is compatible with devices of all sizes and all OS's, and consistent 
 
 ![](https://iharsh234.github.io/WebApp/images/demo/mobile.png)
 
+## Desenvolvimento
+Quer contribuir? Ótimo!
+
+Para corrigir um bug ou aprimorar um módulo existente, siga estes passos:
+
+- Faça um fork do repositório
+- Crie um novo branch (`git checkout -b improve-feature`)
+- Faça as alterações apropriadas nos arquivos
+- Adicione as alterações para refletir as mudanças feitas
+- Faça um commit das suas alterações (`git commit -am 'Improve feature'`)
+- Faça o push para o branch (`git push origin improve-feature`)
+- Crie uma Pull Request
+
+### Bug / Solicitação de Funcionalidadet
+
+Se você encontrar um bug, por favor, abra uma issue [aqui](https://github.com/L1malucas/BlazorDash/issues) incluindo sua consulta de pesquisa e o resultado esperado.
+
+Se você gostaria de solicitar uma nova função, sinta-se à vontade para fazê-lo abrindo uma issue [aqui](https://github.com/L1malucas/BlazorDash/issues). Por favor, inclua exemplos de consultas e seus resultados correspondentes.
 
 
+## Ferramentas  
 
-## [Usage](https://iharsh234.github.io/WebApp/) 
-
-### Development
-Want to contribute? Great!
-
-To fix a bug or enhance an existing module, follow these steps:
-
-- Fork the repo
-- Create a new branch (`git checkout -b improve-feature`)
-- Make the appropriate changes in the files
-- Add changes to reflect the changes made
-- Commit your changes (`git commit -am 'Improve feature'`)
-- Push to the branch (`git push origin improve-feature`)
-- Create a Pull Request 
-
-### Bug / Feature Request
-
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/iharsh234/WebApp/issues/new) by including your search query and the expected result.
-
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/iharsh234/WebApp/issues/new). Please include sample queries and their corresponding results.
-
-
-## Built with 
-
-- [jQuery - Ajax](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
-- [Google Chart API](https://developers.google.com/chart/interactive/docs/quick_start) - Free , Rich Gallery , Customizable and Cross-browser compatible.
-- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and  Bundled Javascript plugins.
-
-## Team
+- [Blazor](https://dotnet.microsoft.com/pt-br/apps/aspnet/web-apps/blazor) - O poder do .NET e do C# para criar aplicativos Web de pilha completa sem escrever uma linha de JavaScript.
+- [.NET](https://dotnet.microsoft.com/pt-br/download) - Gratuito. Multiplataforma. Código aberto.
+- [Bootstrap 5](http://getbootstrap.com/) - Framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end
+## Time
 
 [Lucas Lima](https://github.com/L1malucas) 
 
-## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
+## License
 
-MIT © [Harsh Vijay ](https://github.com/iharsh234)
+[MIT ©](https://github.com/L1malucas/BlazorDash/blob/main/LICENSE.md)
 
