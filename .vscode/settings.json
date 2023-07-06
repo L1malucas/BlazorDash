@@ -1,0 +1,5 @@
+{
+  "appService.preDeployTask": "publish-release",
+  "appService.deploySubpath": "bin\\Release\\net7.0\\publish",
+  "appService.defaultWebAppToDeploy": "/subscriptions/2da6e258-9d1a-4252-b9da-52bc459ddd3e/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/limadashblazor"
+}
