@@ -33,7 +33,7 @@ The WebApp is compatible with devices of all sizes and all OS's, and consistent 
 
 ![](https://iharsh234.github.io/WebApp/images/demo/mobile.png)
 
-## Desenvolvimento
+## Contribuição
 Quer contribuir? Ótimo!
 
 Para corrigir um bug ou aprimorar um módulo existente, siga estes passos:
@@ -46,7 +46,7 @@ Para corrigir um bug ou aprimorar um módulo existente, siga estes passos:
 - Faça o push para o branch (`git push origin improve-feature`)
 - Crie uma Pull Request
 
-### Bug / Solicitação de Funcionalidadet
+### Bug / Solicitação de Funcionalidade
 
 Se você encontrar um bug, por favor, abra uma issue [aqui](https://github.com/L1malucas/BlazorDash/issues) incluindo sua consulta de pesquisa e o resultado esperado.
 

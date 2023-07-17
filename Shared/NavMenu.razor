@@ -18,7 +18,7 @@
                 <span class="oi oi-home" aria-hidden="true"></span>
                 @if (!@IconMenuActive)
                 {
-                    <label>Home</label>
+                    <label>Overview</label>
                 }
             </NavLink>
         </div>
@@ -27,7 +27,7 @@
                 <span class="oi oi-plus" aria-hidden="true"></span>
                 @if (!@IconMenuActive)
                 {
-                    <label>Counter</label>
+                    <label>Growth</label>
                 }
             </NavLink>
         </div>
@@ -36,7 +36,34 @@
                 <span class="oi oi-list-rich" aria-hidden="true"></span>
                 @if (!@IconMenuActive)
                 {
-                    <label>Fetch data</label>
+                    <label>Customers</label>
+                }
+            </NavLink>
+        </div>
+           <div class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span>
+                @if (!@IconMenuActive)
+                {
+                    <label>Reports</label>
+                }
+            </NavLink>
+        </div>   <br><br>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span>
+                @if (!@IconMenuActive)
+                {
+                    <label>Support</label>
+                }
+            </NavLink>
+        </div>   
+        <div class="nav-item px-3">
+            <NavLink class="nav-link pe-auto" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span>
+                @if (!@IconMenuActive)
+                {
+                    <label>Settings</label>
                 }
             </NavLink>
         </div>
@@ -45,18 +72,23 @@
 
 </div>
 
-<div class="bottom-row">
-    <div class="icon-menu-arrow">
+
+<div class="bottom-row" >
+    <div class="icon-menu-arrow d-flex justify-content-around pe-auto">
         @if (!@IconMenuActive)
         {
-            <span class="oi oi-arrow-left" style="color: white;" @onclick="ToggleIconMenu"></span>
+            <span class="oi oi-arrow-left  pe-auto" aria-hidden="true" style="color: white;" @onclick="ToggleIconMenu"></span>
+            <label class="text-light  pe-auto" @onclick="ToggleIconMenu">  Log Out</label>
+
         }
         else
         {
-            <span class="oi oi-arrow-right" style="color: white;" @onclick="ToggleIconMenu"></span>
+            <span class="oi oi-arrow-right" style="color: white; " @onclick="ToggleIconMenu"></span>
+
         }
     </div>
 </div>
+
 
 @code {
     //bool to send to MainLayout for shrinking sidebar and showing/hide menu text
