@@ -1,93 +1,92 @@
 ﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <span class="oi oi-monitor" style="color:white;" aria-hidden="true"></span>
+    <div class="container-fluid d-flex justify-content-around">
+            <a class="pe-auto" target="_blank" href="https://www.linkedin.com/in/limalucasdev">
+        <span class="fa-brands fa-linkedin"  style="color:white;" aria-hidden="true">
+            </span>
+            </a>
         @if (!@IconMenuActive)
         {
-            <a class="navbar-brand" href="">The Menu Title Here</a>
+            <a class="navbar-brand" href="">Blazor Dashboard</a>
         }
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
 </div>
-
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span>
-                @if (!@IconMenuActive)
+            <NavLink class="nav-link d-flex justify-content-around" href="" Match="NavLinkMatch.All">
+                <span class="fa-solid fa-shapes" aria-hidden="true"></span>
+                @if (!IconMenuActive)
                 {
-                    <label>Overview</label>
+                    <label class="ps-2">Overview</label>
                 }
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span>
-                @if (!@IconMenuActive)
+            <NavLink class="nav-link d-flex justify-content-around" href="counter">
+                <span class="fa-solid fa-chart-line" aria-hidden="true"></span>
+                @if (!IconMenuActive)
                 {
-                    <label>Growth</label>
+                    <label class="ps-2">Growth</label>
                 }
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span>
-                @if (!@IconMenuActive)
+            <NavLink class="nav-link d-flex justify-content-around" href="fetchdata">
+                <span class="fa-solid fa-people-group" aria-hidden="true"></span>
+                @if (!IconMenuActive)
                 {
-                    <label>Customers</label>
+                    <label class="ps-2">Customers</label>
                 }
             </NavLink>
         </div>
-           <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span>
-                @if (!@IconMenuActive)
+        <div class="nav-item px-3">
+            <NavLink class="nav-link d-flex justify-content-around" href="fetchdata">
+                <span class="fa-solid fa-file" aria-hidden="true"></span>
+                @if (!IconMenuActive)
                 {
-                    <label>Reports</label>
+                    <label class="ps-2">Reports</label>
                 }
             </NavLink>
-        </div>   <br><br>
+        </div>
+        <br><br>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span>
-                @if (!@IconMenuActive)
+            <NavLink class="nav-link d-flex justify-content-around" href="fetchdata">
+                <span class="fa-light fa-question" aria-hidden="true"></span>
+                @if (!IconMenuActive)
                 {
-                    <label>Support</label>
+                    <label class="ps-2">Support</label>
                 }
             </NavLink>
-        </div>   
+        </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link pe-auto" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span>
-                @if (!@IconMenuActive)
+            <NavLink class="nav-link d-flex justify-content-around pe-auto" href="fetchdata">
+                <span class="fa-solid fa-sliders" aria-hidden="true"></span>
+                @if (!IconMenuActive)
                 {
-                    <label>Settings</label>
+                    <label class="ps-2">Settings</label>
+                }
+            </NavLink>
+        </div>
+        <br><br><br><br>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link d-flex justify-content-around pe-auto">
+                @if (!IconMenuActive)
+                {
+                    <span class="fa-solid fa-right-from-bracket pe-auto" aria-hidden="true" style="color: white;" @onclick="ToggleIconMenu"></span>
+                    <label class="text-light pe-auto ps-2" @onclick="ToggleIconMenu">Log Out</label>
+                }
+                else
+                {
+                    <span class="fa-solid fa-right-from-bracket" style="color: white;" @onclick="ToggleIconMenu"></span>
                 }
             </NavLink>
         </div>
     </nav>
-
-
 </div>
 
-
-<div class="bottom-row" >
-    <div class="icon-menu-arrow d-flex justify-content-around pe-auto">
-        @if (!@IconMenuActive)
-        {
-            <span class="oi oi-arrow-left  pe-auto" aria-hidden="true" style="color: white;" @onclick="ToggleIconMenu"></span>
-            <label class="text-light  pe-auto" @onclick="ToggleIconMenu">  Log Out</label>
-
-        }
-        else
-        {
-            <span class="oi oi-arrow-right" style="color: white; " @onclick="ToggleIconMenu"></span>
-
-        }
-    </div>
-</div>
 
 
 @code {
